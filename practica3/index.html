@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Práctica 3 | Ibero Puebla</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container px-5">
+                    <a class="navbar-brand">Menu</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="../">Home</a></li>                    
+                            <li class="nav-item"><a class="nav-link" href="../index.html#resumen">Acerca de mi</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#practicas">Prácticas</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Seccion TITULO de Portafolio-->
+            <header class="bg-primary py-2 mt-6">
+                <div class="container px-5">
+                    <div class="row gx-5 align-items-center justify-content-center">
+                        <div class="col-lg-8 col-xl-7 col-xxl-6">
+                            <div class="my-5 text-center text-xl-start">
+                                <h1 class="display-6 fw-bolder text-white mb-2">Portafolio de Actividades</h1>
+                                <h1 class="display-8 fw-bolder text-white mb-2">Laboratorio de Elementos Programables I</h1>
+                                <p id="resumen" class="display-8 fw-normal text-white-50 mb-4">Departamento de Ciencias e Ingenierías | Universidad Iberoamericana Puebla, México.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Seccion TITULO de la Práctica-->
+            <section class="py-3" id="scroll-target">
+                <div class="container px-5 my-2">
+                    <!-- Post header-->
+                    <header class="mb-4">
+                        <!-- Post title-->
+                        <h1 class="fw-bolder mb-1">Práctica 3: Attiny85 Digital I/O</h1>
+
+                        <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
+                            <img class="img-fluid rounded-circle" width="50px" src="assets/fotoari.jpeg" alt="..." />
+                            <div class="ms-2">
+                                <div class="fw-bold">Nombre: Ariatna Laiseca De la Cruz</div>
+                                <div class="text-muted">Carrera: Ingeniería Biomédica</div>
+                            </div>
+                        <!--Aqui termina etiqueta de alumno-->
+
+                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: Septiembre 7, 2023</div>
+                        <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
+                        <a class="badge bg-primary text-decoration-none link-light" >Arduino</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Electrónica</a>
+
+                    </header>
+                </div>
+            </section>
+
+            <!-- Seccion de CONTENIDO de la Práctica-->
+            <section>
+                <div class="container px-5">
+
+                    <figure class="mb-4"><img class="img-fluid rounded" width="800px" src="img/ne555.png" alt="..." /></figure>
+                                
+                    <p id="resumen">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
+                        <p class="fs-6 mb-4">El Attiny85, un pequeño microcontrolador, con el que podremos realizar pequeños proyectos, en los que no necesitemos gran cantidad de memoria ni de entradas o salidas.La programación de este micro, la podremos realizar con nuestro entorno de escritorio de Arduino.
+                        </p>
+                        <p class="fs-6 mb-4">En este reporte de práctica se describe el funcionamiento de Attiny85, también se utilizó Tinkercad para la simulación del código y las conexiones de entradas y salidas digitales de Attiny85, utilizando de leds, resitencias y botones con protoboard.
+                            El objetivo de éstas prácticas es conocer cómo funciona Attiny85, como conectar las entradas y salidas y como relizar programas sencillos para utilizar condicionales en botones y leds.
+                        </p>
+                        
+                        <p id="intro">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
+                        <p class="fs-6 mb-4">El circuito integrado  ATTINY85-20PU es un microcontrolador de 8-bit con 2/4/8K Bytes En-Sistema de flash programable basado en RISC AVR Atmel de alto desempeño y bajo consumo de 8 bits que combina memoria flash ISP de 8 kB, EEPROM de 512 bytes, SRAM de 512 bytes, 6 líneas de E/S de propósito general, 32 registros de trabajo de propósito general, un temporizador/contador de 8 bits con modos de comparación, un temporizador/contador de alta velocidad de 8 bits, USI, interrupciones internas y externas, convertidor A/D de 4 canales y 10 bits, temporizador de vigilancia programable con oscilador interno, tres modos de ahorro de energía seleccionables por software y debugWIRE para depuración en chip. El dispositivo alcanza un rendimiento de 20 MIPS a 20 MHz y opera entre 2.7 a 5.5 volts.
+                        </p>
+                        <p class="fs-6 mb-4"> 
+                            Arduino es una plataforma de desarrollo de código abierto ampliamente utilizada para prototipado y desarrollo de proyectos electrónicos. Uno de los usos comunes de Arduino es como programador para microcontroladores, incluyendo el ATtiny85. 
+                            Para poder tener tu propio programador ISP, el ejemplo más común es utilizar una placa Arduino UNO. Pero también puedes utilizar otras placas basadas en el microcontrolador ATMega328 como por ejemplo el Arduino Nano. Lo único a tener en cuenta es que la placa que utilices debe disponer de un puerto USB por razones obvias.
+                        </p>
+                        <p class="fs-6 mb-4"></p>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/attiny.png" alt="..." /></figure>
+                        <p class="fs-6 mb-4">Se realizaron las prácticas del curso de Attiny85 Digital I/O, mediante la construccion de circuitos con leds y botones . Posteriormente se realizaron las simulaciones con los códigos ya elaborados, con el objetivo de aprender el uso básico de Attiny85.</p> 
+                            
+                        <p id="materiales">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
+                        <p class="fs-6 mb-4">Arduino UNO, Attiny85, Protoboard,</p>
+                        <p class="fs-6 mb-4">Botones, Leds, Resistencia 220 ohms y 1 kOhm</p>
+                        
+                        <p id="desarrollo">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
+                        <p class="fs-6 mb-4">En nuestro caso de ejemplo, tenemos un Arduino UNO que ya tiene el conector USB y por lo tanto, aquí es donde realizaremos las conexiones a la placa que queramos programar. Pero antes necesitamos convertir el Arduino UNO en un programador como tal. Para eso, el IDE de Arduino dispone de un programa específico para eso y que puedes abrir desde el menú Archivo / Ejemplos / ArduinoISP.
+                            Como cualquier otro programa, debes conectar tu placa mediante USB y seleccionar la placa correcta en el menú Herramientas / Placa.
+                            Una vez hecho, pulsamos sobre el botón Subir y quedará la placa preparada como programador ISP. Antes de poder utilizar el Arduino UNO como programador, debes indicarle al IDE de Arduino que lo utilice como tal. Para eso es necesario indicarlo en menú Herramientas / Programador y selecciona la opción Arduino as ISP.
+                        </p>
+                        <p class="fs-6 mb-4"></p>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/Arduino as isp.png" alt="..." /></figure>
+                        <p class="fs-6 mb-4"> Ahora lo que vamos hacer es conectar nuestro flamante programador ISP Arduino UNO que hemos preparado, para conectar a nuestra placa a reparar.
+                            Es decir, vamos a quemar el bootloader.
+                        </p>
+                        <p class="fs-6 mb-4"> Conectamos el microcontrolador Attiny85 para poder quemarlo y también será la configuración para cargar los programas desde Arduino como programador.
+                        </p>
+                        <p class="fs-6 mb-4"></p>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/0_cargar attiny.jpeg" alt="..." /></figure>
+                        <p class="fs-6 mb-4"> Conectamos el microcontrolador Attiny85 del otro lado del protoboard para poder conectar los demás pines en los leds y botones de cada práctica, ya que solo cuenta con 6 pines más ademas del voltaje y tierra.
+                        </p>
+                        <p class="fs-6 mb-4"></p>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/0_arduino uno as isp.jpeg" alt="..." /></figure>
+                         
+                        
+                            <p id="simulacion">
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación</h1>
+                            <!--Practicas solo arduino-->
+                            <p class="fs-6 mb-4">Se copió el código ya prediseñado en Tinkercad de cada práctica para cargarlo en Arduino como programador. Algunos ejemplos de los códigos realizados son los siguientes:</p>
+                            <figure class="mb-4" align="left"><img class="img-fluid rounded"  width="350px" src="img/1.png" alt="..." /></figure>
+                            <p class="fs-6 mb-4">attiny blink</p>
+                            <figure class="mb-4" align="left"><img class="img-fluid rounded"  width="350px" src="img/2.png" alt="..." /></figure>
+                            <p class="fs-6 mb-4">attiny digital high</p>
+                            <figure class="mb-4" align="left"><img class="img-fluid rounded"  width="350px" src="img/3.png" alt="..." /></figure>
+                            <p class="fs-6 mb-4">attiny digital low</p>
+                            <figure class="mb-4" align="left"><img class="img-fluid rounded"  width="350px" src="img/4.png" alt="..." /></figure>
+                            <p class="fs-6 mb-4">attiny digital delay</p>
+                            <figure class="mb-4" align="left"><img class="img-fluid rounded"  width="350px" src="img/5.png" alt="..." /></figure>
+                            <p class="fs-6 mb-4">attiny 2 leds delay</p>
+                            <figure class="mb-4" align="left"><img class="img-fluid rounded"  width="350px" src="img/6.png" alt="..." /></figure>
+                            <p class="fs-6 mb-4">attiny 3 leds delay</p>
+                            <figure class="mb-4" align="left"><img class="img-fluid rounded"  width="350px" src="img/7.png" alt="..." /></figure>
+                            <p class="fs-6 mb-4">attiny digital input</p>
+                            <figure class="mb-4" align="left"><img class="img-fluid rounded"  width="350px" src="img/8.png" alt="..." /></figure>
+                            <p class="fs-6 mb-4">attiny digital input if else</p>
+                            <figure class="mb-4" align="left"><img class="img-fluid rounded"  width="350px" src="img/9.png" alt="..." /></figure>
+                            <p class="fs-6 mb-4">attiny digital input if variables</p>
+                            <figure class="mb-4" align="left"><img class="img-fluid rounded"  width="350px" src="img/10.png" alt="..." /></figure>
+                            <p class="fs-6 mb-4">attiny digital input or</p>
+                            <figure class="mb-4" align="left"><img class="img-fluid rounded"  width="350px" src="img/11.png" alt="..." /></figure>
+                            <p class="fs-6 mb-4">Video Attiny Digital Input AND</p>
+                            <figure class="mb-4" align="left"><img class="img-fluid rounded"  width="350px" src="img/12.png" alt="..." /></figure>
+                            <p class="fs-6 mb-4">Attiny Contador +3leds</p>
+                            <figure class="mb-4" align="left"><img class="img-fluid rounded"  width="350px" src="img/13.png" alt="..." /></figure>
+                            <p class="fs-6 mb-4">Attiny Contador -3leds</p>
+                    
+                            <p id="construccion">
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Construcción</h1>
+                            <p class="fs-6 mb-4">Se realizó la construcción de los circuitos eléctricos con el Arduino, Attiny85 y el protoboard. Algunos ejemplos de los circuitos son los siguientes:</p>
+                            <figure class="mb-4" align="left"><img class="img-fluid rounded"  width="350px" src="img/circ1.jpeg" alt="..." /></figure>
+                            <p class="fs-6 mb-4"> </p>
+                            <figure class="mb-4" align="left"><img class="img-fluid rounded"  width="350px" src="img/circ2.jpeg" alt="..." /></figure>
+                            <p class="fs-6 mb-4"> </p>
+                            <figure class="mb-4" align="left"><img class="img-fluid rounded"  width="350px" src="img/circ3.png" alt="..." /></figure>
+                            <p class="fs-6 mb-4"> </p>
+                            <figure class="mb-4" align="left"><img class="img-fluid rounded"  width="350px" src="img/circ6.png" alt="..." /></figure>
+                            <p class="fs-6 mb-4"> </p>
+                            <figure class="mb-4" align="left"><img class="img-fluid rounded"  width="350px" src="img/circ7.png" alt="..." /></figure>
+                            <p class="fs-6 mb-4"> </p>
+                            <figure class="mb-4" align="left"><img class="img-fluid rounded"  width="350px" src="img/circ8.jpeg" alt="..." /></figure>
+                            <p class="fs-6 mb-4"> </p>
+                            
+
+                        <p id="resultados">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
+                        <p class="fs-6 mb-4">Simulación de las prácticas del curso de Attiny85.</p>
+
+                        <div class="container px-5 my-2">
+                            <h2 class="fw-bolder fs-5 mb-4">Reportes de Prácticas:</h2>
+                            <div class="row gx-5">
+                                <div class="col-lg-4 mb-4">
+                                    <figure class="mb-4" align="center"><video width="100%"  controls>
+                                        <source src="video/1_attiny blink.mp4" type="video/mp4">
+                                    </video></p></figure>
+                                    <p class="fs-6 mb-4">1. Video attiny blink</p>
+                                </div>
+                                <div class="col-lg-4 mb-4">
+                                    <figure class="mb-4" align="center"><video width="100%"  controls>
+                                        <source src="video/2_attiny digital high.mp4" type="video/mp4">
+                                    </video></p></figure>
+                                    <p class="fs-6 mb-4">2. Video attiny digital high</p>
+                                </div>
+                                <div class="col-lg-4">
+                                    <figure class="" align="center"><video width="100%"  controls>
+                                        <source src="video/3_attiny digital low.mp4" type="video/mp4">
+                                    </video></p></figure>
+                                    <p class="fs-6 mb-4">3. Video attiny digital low</p>
+                                </div>
+                                <div class="col-lg-4">
+                                    <figure class="" align="center"><video width="100%"  controls>
+                                        <source src="video/4_attiny digital delay.mp4" type="video/mp4">
+                                    </video></p></figure>
+                                    <p class="fs-6 mb-4">4. Video attiny digital delay</p>
+                                </div>
+                                <div class="col-lg-4">
+                                    <figure class="" align="center"><video width="85%"  controls>
+                                        <source src="video/5_attiny 2 leds delay.mp4" type="video/mp4">
+                                    </video></p></figure>
+                                    <p class="fs-6 mb-4">5. Video attiny 2 leds delay</p>
+                                </div>
+                                <div class="col-lg-4">
+                                    <figure class="" align="center"><video width="90%"  controls>
+                                        <source src="video/6_attiny 3 leds delay.mp4" type="video/mp4">
+                                    </video></p></figure>
+                                    <p class="fs-6 mb-4">6. Video attiny 3 leds delay</p>
+                                </div>
+                                <div class="col-lg-4">
+                                    <figure class="" align="center"><video width="89%"  controls>
+                                        <source src="video/7_attiny digital input.mp4" type="video/mp4">
+                                    </video></p></figure>
+                                    <p class="fs-6 mb-4">7. Video attiny digital input</p> 
+                                </div>
+                                <div class="col-lg-4 mb-4">
+                                    <figure class="mb-4" align="center"><video width="82%"  controls>
+                                        <source src="video/8_attiny digital input if else.mp4" type="video/mp4">
+                                    </video></p></figure>
+                                    <p class="fs-6 mb-4">8. Video attiny digital input if else</p>
+                                </div>
+                                <div class="col-lg-4">
+                                    <figure class="" align="center"><video width="87%"  controls>
+                                        <source src="video/9_attiny digital input if variables.mp4" type="video/mp4">
+                                    </video></p></figure>
+                                    <p class="fs-6 mb-4">9. Video attiny digital input if variables</p>
+                                </div>
+                                <div class="col-lg-4">
+                                    <figure class="" align="center"><video width="90%"  controls>
+                                        <source src="video/10_attiny digital input or.mp4" type="video/mp4">
+                                    </video></p></figure>
+                                    <p class="fs-6 mb-4">10. Video attiny digital input or</p>
+                                </div>
+                                <div class="col-lg-4">
+                                    <figure class="" align="center"><video width="97%"  controls>
+                                        <source src="video/11_Attiny Digital Input AND (2).mp4" type="video/mp4">
+                                    </video></p></figure>
+                                    <p class="fs-6 mb-4">11. Video Attiny Digital Input AND</p>
+                                </div>
+                                <div class="col-lg-4">
+                                    <figure class="" align="center"><video width="91%"  controls>
+                                        <source src="video/12_Attiny Contador +3leds.mp4" type="video/mp4">
+                                    </video></p></figure>
+                                    <p class="fs-6 mb-4">12. Video Attiny Contador +3leds</p>
+                                </div>
+                                <div class="col-lg-4">
+                                    <figure class="" align="center"><video width="88%"  controls>
+                                        <source src="video/13_Attiny Contador -3leds.mp4" type="video/mp4">
+                                    </video></p></figure>
+                                    <p class="fs-6 mb-4">13. Attiny Contador -3leds</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p id="conclusiones">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
+                        <p class="fs-6 mb-4">Al terminar de completar el curso de Attiny85 básico, me proporcionó una introducción sólida a los conceptos básicos de electrónica, como los componentes electrónicos, circuitos, resistencias y LED. 
+                        El curso me familiarizó con la programación de microcontroladores usando el lenguaje de programación de Arduino. Aprendí a escribir códigos para controlar entradas y salidas.    
+                        Aprendí a identificar y resolver problemas en el código o en las conexiones físicas.
+                        Arduino se puede utilizar como una herramienta poderosa para programar microcontroladores como el ATtiny85, lo que facilita la creación de proyectos electrónicos personalizados y la implementación de soluciones específicas en una amplia gama de aplicaciones.
+                        Si bien el curso es básico, sienta las bases para futuros proyectos más complejos. Ahora tengo una comprensión fundamental de cómo funcionan los microcontroladores y cómo programarlos
+                        </p>
+                        <p class="fs-6 mb-4"></p>
+
+                        <p id="referencias">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Referencias -</h2>
+                        <p class="fs-6 mb-4">Isaac. (2021, 4 agosto). ATtiny85: Un microcontrolador que da mucho juego. . . Hardware libre. https://www.hwlibre.com/attiny85/</p>
+                        <p class="fs-6 mb-4">Cómo usar un arduino UNO como programador ISP | Programador ISP Arduino | BricoGeek Lab. (2022, 31 enero). Tutorial donde te enseño cómo convertir un Arduino UNO en un programador ISP barato y casero. https://lab.bricogeek.com/tutorial/como-usar-un-arduino-uno-como-programador-isp/programador-isp-arduino</p>
+                        <p class="fs-6 mb-4">Alpizar, A. R., & Alpizar, A. R. (2020). Como usar un arduino UNO/MEGA como programador ISP | Sysadmins de Cuba. Sysadmins de Cuba. https://www.sysadminsdecuba.com/2020/08/como-usar-un-arduino-uno-mega-como-programador-isp/</p>
+                        <p class="fs-6 mb-4"></p>
+
+                        <!--<p id="descargables">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Descargables -</h2>
+                        <p class="fs-6 mb-4">Descargar documento PDF: <a href="files/Documento.pdf">documento.pdf</a> </p>
+                        <p class="fs-6 mb-4">Descargar codigo Arduino: <a href="files/Ejemplo_arduino_bluetooth.ino">codigo.ino</a> </p>
+                        <p class="fs-6 mb-4">Descargar Archivo 3d .STL: <a href="files/Pieza_3D.STL">pieza.stl</a> </p>-->
+
+                </div>
+            </section>
+
+            
+        </main>
+
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Ingenierias-iberopuebla.mx 2023</div></div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="#!">Privacy</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Terms</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
