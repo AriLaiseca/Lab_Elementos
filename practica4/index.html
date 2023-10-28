@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Práctica 4 | Ibero Puebla</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container px-5">
+                    <a class="navbar-brand">Menu</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="../">Home</a></li>                    
+                            <li class="nav-item"><a class="nav-link" href="../index.html#resumen">Acerca de mi</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#practicas">Prácticas</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Seccion TITULO de Portafolio-->
+            <header class="bg-primary py-2 mt-6">
+                <div class="container px-5">
+                    <div class="row gx-5 align-items-center justify-content-center">
+                        <div class="col-lg-8 col-xl-7 col-xxl-6">
+                            <div class="my-5 text-center text-xl-start">
+                                <h1 class="display-6 fw-bolder text-white mb-2">Portafolio de Actividades</h1>
+                                <h1 class="display-8 fw-bolder text-white mb-2">Laboratorio de Elementos Programables I</h1>
+                                <p id="resumen" class="display-8 fw-normal text-white-50 mb-4">Departamento de Ciencias e Ingenierías | Universidad Iberoamericana Puebla, México.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Seccion TITULO de la Práctica-->
+            <section class="py-3" id="scroll-target">
+                <div class="container px-5 my-2">
+                    <!-- Post header-->
+                    <header class="mb-4">
+                        <!-- Post title-->
+                        <h1 class="fw-bolder mb-1">Práctica 4: Attiny85 Outputs</h1>
+
+                        <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
+                            <img class="img-fluid rounded-circle" width="50px" src="assets/fotoari.jpeg" alt="..." />
+                            <div class="ms-2">
+                                <div class="fw-bold">Nombre: Ariatna Laiseca De la Cruz</div>
+                                <div class="text-muted">Carrera: Ingeniería Biomédica</div>
+                            </div>
+                        <!--Aqui termina etiqueta de alumno-->
+
+                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: Septiembre 14, 2023</div>
+                        <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
+                        <a class="badge bg-primary text-decoration-none link-light" >Arduino</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Electrónica</a>
+
+                    </header>
+                </div>
+            </section>
+
+            <!-- Seccion de CONTENIDO de la Práctica-->
+            <section>
+                <div class="container px-5">
+
+                    <figure class="mb-4"><img class="img-fluid rounded" width="800px" src="img/OUTPUTS.png" alt="..." /></figure>
+                                
+                    <p id="resumen">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
+                        <p class="fs-6 mb-4">En este reporte de práctica, se llevó a cabo la incorporación de los resultados (OUTPUTS) en el Attiny85. Para lograrlo, se empleó un Arduino UNO como programador siguiendo las INDICACIONES proporcionadas por el profesor en la página proporcionada en Tinkercad. Es relevante destacar que el Attiny85 es un microprocesador ágil con un reducido número de pines, lo que lo convierte en una opción sencilla para diversas tareas de programación.
+                        </p>
+                        
+                        <p id="intro">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
+                        <p class="fs-6 mb-4">El circuito integrado  ATTINY85-20PU es un microcontrolador de 8-bit con 2/4/8K Bytes En-Sistema de flash programable basado en RISC AVR Atmel de alto desempeño y bajo consumo de 8 bits que combina memoria flash ISP de 8 kB, EEPROM de 512 bytes, SRAM de 512 bytes, 6 líneas de E/S de propósito general, 32 registros de trabajo de propósito general, un temporizador/contador de 8 bits con modos de comparación, un temporizador/contador de alta velocidad de 8 bits, USI, interrupciones internas y externas, convertidor A/D de 4 canales y 10 bits, temporizador de vigilancia programable con oscilador interno, tres modos de ahorro de energía seleccionables por software y debugWIRE para depuración en chip. El dispositivo alcanza un rendimiento de 20 MIPS a 20 MHz y opera entre 2.7 a 5.5 volts.
+                        </p>
+                        <p class="fs-6 mb-4">Las salidas o "outputs" se refieren a las señales o datos que un sistema, dispositivo o programa envía o produce hacia el exterior. Estas salidas pueden manifestarse en diversas formas, como señales eléctricas, información visual en una pantalla, sonidos audibles, movimientos mecánicos, o cualquier otro tipo de resultado que indique información generada por el sistema. Las salidas son esenciales en la interacción de los sistemas con el entorno y su capacidad para comunicar información o realizar acciones según las necesidades del usuario o del propio sistema.
+                        </p>
+                        <p class="fs-6 mb-4"></p>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/MOTORES.png" alt="..." /></figure>
+                         
+                        <p id="materiales">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
+                        <p class="fs-6 mb-4">Arduino UNO, Attiny85, Protoboard,</p>
+                        <p class="fs-6 mb-4">Botones,2 Leds, 2 Resistencias de 220 ohms y 3 de 1 kOhm, cables</p>
+                        <p class="fs-6 mb-4">Buzzer, motor, servomotor, fuente de 5V y computadora</p>
+
+                        <p id="desarrollo">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
+                        <p class="fs-6 mb-4">
+                            Primero se programó el Arduino UNO para ocuparse como programador.
+                            Se configuró el Attiny885 para que se pueda conectar con el Arduino y cargar los programas.
+                        </p>
+                            <p id="simulacion">
+                                <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Simulación</h1>
+                                <!--Practicas solo arduino-->
+                                <p class="fs-6 mb-4">
+                                    Se realizaron las simulaciones de las mini prácticas.
+                                    Se copió el código ya prediseñado en Tinkercad de cada práctica para cargarlo en Arduino. Los códigos realizados son los siguientes:
+                                </p>
+                                <p class="fs-6 mb-4">Attiny LED</p>
+                                <figure class="mb-4" align="left"><img class="img-fluid rounded"  width="350px" src="img/1_Attiny LED - 2 Botones.png" alt="..." /></figure>
+                                <figure class="mb-4" align="left"><img class="img-fluid rounded"  width="350px" src="img/1_Attiny LED.png" alt="..." /></figure>
+                                <p class="fs-6 mb-4">Attiny LED Blink</p>
+                                <figure class="mb-4" align="left"><img class="img-fluid rounded"  width="350px" src="img/2_Attiny LED Blink - 2 Botones.png" alt="..." /></figure>
+                                <figure class="mb-4" align="left"><img class="img-fluid rounded"  width="350px" src="img/2_Attiny LED Blink.png" alt="..." /></figure>
+                                <p class="fs-6 mb-4">Attiny Buzzer</p>
+                                <figure class="mb-4" align="left"><img class="img-fluid rounded"  width="350px" src="img/3_Attiny Buzzer - 2 Botones.png" alt="..." /></figure>
+                                <figure class="mb-4" align="left"><img class="img-fluid rounded"  width="350px" src="img/3_Attiny Buzzer.png" alt="..." /></figure>
+                                <p class="fs-6 mb-4">Attiny LED RGB</p>
+                                <figure class="mb-4" align="left"><img class="img-fluid rounded"  width="350px" src="img/4_Attiny LED RGB - 2 Botones.png" alt="..." /></figure>
+                                <figure class="mb-4" align="left"><img class="img-fluid rounded"  width="350px" src="img/4_Attiny LED RGB.png" alt="..." /></figure>
+                                <p class="fs-6 mb-4">Attiny LED RGB contador</p>
+                                <figure class="mb-4" align="left"><img class="img-fluid rounded"  width="350px" src="img/5_Attiny LED RGB contador - 2 Botones.png" alt="..." /></figure>
+                                <figure class="mb-4" align="left"><img class="img-fluid rounded"  width="350px" src="img/5_Attiny LED RGB contador.png" alt="..." /></figure>
+                                <p class="fs-6 mb-4">Attiny Motor DC</p>
+                                <figure class="mb-4" align="left"><img class="img-fluid rounded"  width="350px" src="img/6_Attiny Motor DC- 2 Botones.png" alt="..." /></figure>
+                                <figure class="mb-4" align="left"><img class="img-fluid rounded"  width="350px" src="img/6_Attiny Motor DC.png" alt="..." /></figure>
+                                <p class="fs-6 mb-4">Attiny Motor DC</p>
+                                <figure class="mb-4" align="left"><img class="img-fluid rounded"  width="350px" src="img/7_Attiny Motor DC.png" alt="..." /></figure>
+                                <figure class="mb-4" align="left"><img class="img-fluid rounded"  width="350px" src="img/7_AttinyLEDPWM.png" alt="..." /></figure>
+                                <p class="fs-6 mb-4">Attiny LED PWM</p>
+                                <figure class="mb-4" align="left"><img class="img-fluid rounded"  width="350px" src="img/8_Attiny LED PWM - 2 Botones.png" alt="..." /></figure>
+                                <figure class="mb-4" align="left"><img class="img-fluid rounded"  width="350px" src="img/8_Attiny LED PWM.png" alt="..." /></figure>
+                                <p class="fs-6 mb-4">Attiny Buzzer PWM</p>
+                                <figure class="mb-4" align="left"><img class="img-fluid rounded"  width="350px" src="img/9_Attiny Buzzer PWM.png" alt="..." /></figure>
+                                <figure class="mb-4" align="left"><img class="img-fluid rounded"  width="350px" src="img/9_AttinyBuzzerPWM.png" alt="..." /></figure>
+                                <p class="fs-6 mb-4">Attiny Buzzer PWM 2 botones</p>
+                                <figure class="mb-4" align="left"><img class="img-fluid rounded"  width="350px" src="img/10_Attiny Buzzer PWM - 2 Botones.png" alt="..." /></figure>
+                                <figure class="mb-4" align="left"><img class="img-fluid rounded"  width="350px" src="img/10_Attiny Buzzer PWM2botonrd.png" alt="..." /></figure>
+                                <p class="fs-6 mb-4">Attiny Motor DC PWM</p>
+                                <figure class="mb-4" align="left"><img class="img-fluid rounded"  width="350px" src="img/11_Attiny Motor DC PWM- 2 Botones.png" alt="..." /></figure>
+                                <figure class="mb-4" align="left"><img class="img-fluid rounded"  width="350px" src="img/11_Attiny Motor DC PWM.png" alt="..." /></figure>
+                                <p class="fs-6 mb-4">Attiny Servomotor</p>
+                                <figure class="mb-4" align="left"><img class="img-fluid rounded"  width="350px" src="img/12_Attiny Servomotor.png" alt="..." /></figure>
+                                <figure class="mb-4" align="left"><img class="img-fluid rounded"  width="350px" src="img/12_Attiny Servomotor1.png" alt="..." /></figure>
+                                <p class="fs-6 mb-4">Attiny Servomotor 2 botones</p>
+                                <figure class="mb-4" align="left"><img class="img-fluid rounded"  width="350px" src="img/13_Attiny Servomotor - 2 Botones.png" alt="..." /></figure>
+                                <figure class="mb-4" align="left"><img class="img-fluid rounded"  width="350px" src="img/13_Attiny Servomotor 2bot.png" alt="..." /></figure>
+                                <p class="fs-6 mb-4">Attiny Neopixel2bot</p>
+                                <figure class="mb-4" align="left"><img class="img-fluid rounded"  width="350px" src="img/14_Attiny Neopixel.png" alt="..." /></figure>
+                                <figure class="mb-4" align="left"><img class="img-fluid rounded"  width="350px" src="img/14_AttinyNeopixel1.png" alt="..." /></figure>
+                                <p class="fs-6 mb-4">Attiny Neopixel 2 botones</p>
+                                <figure class="mb-4" align="left"><img class="img-fluid rounded"  width="350px" src="img/15_Attiny Neopixel - 2 Botones.png" alt="..." /></figure>
+                                <figure class="mb-4" align="left"><img class="img-fluid rounded"  width="350px" src="img/15_Attiny Neopixel2bot.png" alt="..." /></figure>
+                                <p class="fs-6 mb-4">Attiny Neopixel Tira x 5</p>
+                                <figure class="mb-4" align="left"><img class="img-fluid rounded"  width="350px" src="img/16_Attiny Neopixel Tira x 5 - 2 Botones.png" alt="..." /></figure>
+                                <figure class="mb-4" align="left"><img class="img-fluid rounded"  width="350px" src="img/16_Attiny Neopixel Tira x 5.png" alt="..." /></figure>
+                                <p class="fs-6 mb-4">Attiny Neopixel Tira x 5 n 2 botones</p>
+                                <figure class="mb-4" align="left"><img class="img-fluid rounded"  width="350px" src="img/17_Attiny Neopixel Tira x 5 - 2 Botones.png" alt="..." /></figure>
+                                <figure class="mb-4" align="left"><img class="img-fluid rounded"  width="350px" src="img/17_Attiny Neopixel Tira x 5.png" alt="..." /></figure>
+                        
+                            <p id="construccion">
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Construcción</h1>
+                            <p class="fs-6 mb-4">Se realizó la construcción de los circuitos eléctricos con el Arduino, Attiny85 y el protoboard de acuerdo a las simulaciones en Tinkercad.</p>
+      
+                        <p id="resultados">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
+                        <p class="fs-6 mb-4">Simulación de las prácticas del curso 2 de Attiny85 OUTPUTS.</p>
+
+                        <div class="container px-5 my-2">
+                            <h2 class="fw-bolder fs-5 mb-4">Reportes de Prácticas:</h2>
+                            <div class="row gx-5">
+                                <div class="col-lg-4 mb-4">
+                                    <figure class="mb-4" align="center"><video width="100%"  controls>
+                                        <source src="video/1_Attiny LED 2 botones.mp4" type="video/mp4">
+                                    </video></p></figure>
+                                    <p class="fs-6 mb-4">1. Attiny LED</p>
+                                </div>
+                                <div class="col-lg-4 mb-4">
+                                    <figure class="mb-4" align="center"><video width="100%"  controls>
+                                        <source src="video/2_Attiny LED Blink.mp4" type="video/mp4">
+                                    </video></p></figure>
+                                    <p class="fs-6 mb-4">2. Attiny LED Blink</p>
+                                </div>
+                                <div class="col-lg-4">
+                                    <figure class="" align="center"><video width="100%"  controls>
+                                        <source src="video/3_Attiny Buzzer.mp4" type="video/mp4">
+                                    </video></p></figure>
+                                    <p class="fs-6 mb-4">3. Attiny Buzzer</p>
+                                </div>
+                                <div class="col-lg-4">
+                                    <figure class="" align="center"><video width="100%"  controls>
+                                        <source src="video/4_Attiny LED RGB.mp4" type="video/mp4">
+                                    </video></p></figure>
+                                    <p class="fs-6 mb-4">4. Attiny LED RGB</p>
+                                </div>
+                                <div class="col-lg-4">
+                                    <figure class="" align="center"><video width="85%"  controls>
+                                        <source src="video/5_Attiny LED RGB contador.mp4" type="video/mp4">
+                                    </video></p></figure>
+                                    <p class="fs-6 mb-4">5. Attiny LED RGB contador</p>
+                                </div>
+                                <div class="col-lg-4">
+                                    <figure class="" align="center"><video width="90%"  controls>
+                                        <source src="video/6_Attiny Motor DC.mp4" type="video/mp4">
+                                    </video></p></figure>
+                                    <p class="fs-6 mb-4">6. Attiny Motor DC</p>
+                                </div>
+                                <div class="col-lg-4">
+                                    <figure class="" align="center"><video width="89%"  controls>
+                                        <source src="video/7_Attiny LED PWM.mp4" type="video/mp4">
+                                    </video></p></figure>
+                                    <p class="fs-6 mb-4">7. Attiny LED PWM</p> 
+                                </div>
+                                <div class="col-lg-4 mb-4">
+                                    <figure class="mb-4" align="center"><video width="82%"  controls>
+                                        <source src="video/8_Attiny LED PWM 2 botones.mp4" type="video/mp4">
+                                    </video></p></figure>
+                                    <p class="fs-6 mb-4">8. Attiny LED PWM 2 botones</p>
+                                </div>
+                                <div class="col-lg-4">
+                                    <figure class="" align="center"><video width="87%"  controls>
+                                        <source src="video/9_Attiny Buzzer PWM.mp4" type="video/mp4">
+                                    </video></p></figure>
+                                    <p class="fs-6 mb-4">9. Attiny Buzzer PWM</p>
+                                </div>
+                                <div class="col-lg-4">
+                                    <figure class="" align="center"><video width="90%"  controls>
+                                        <source src="video/10_Attiny Buzzer PWM 2 botones.mp4" type="video/mp4">
+                                    </video></p></figure>
+                                    <p class="fs-6 mb-4">10. Attiny Buzzer PWM 2 botones</p>
+                                </div>
+                                <div class="col-lg-4">
+                                    <figure class="" align="center"><video width="97%"  controls>
+                                        <source src="video/11_Attiny Motor DC PWM 2 botones.mp4" type="video/mp4">
+                                    </video></p></figure>
+                                    <p class="fs-6 mb-4">11. Attiny Motor DC PWM 2 botones</p>
+                                </div>
+                                <div class="col-lg-4">
+                                    <figure class="" align="center"><video width="91%"  controls>
+                                        <source src="video/12_Attiny Servomotores.mp4" type="video/mp4">
+                                    </video></p></figure>
+                                    <p class="fs-6 mb-4">12. Attiny Servomotor</p>
+                                </div>
+                                <div class="col-lg-4">
+                                    <figure class="" align="center"><video width="88%"  controls>
+                                        <source src="video/13_Attiny servomotor 2 botones.mp4" type="video/mp4">
+                                    </video></p></figure>
+                                    <p class="fs-6 mb-4">13. Attiny servomotor 2 botones</p>
+                                </div>
+                                <div class="col-lg-4">
+                                    <figure class="" align="center"><video width="88%"  controls>
+                                        <source src="video/14_Attiny Neopixel.mp4" type="video/mp4">
+                                    </video></p></figure>
+                                    <p class="fs-6 mb-4">14. Attiny Neopixel</p>
+                                </div>
+                                <div class="col-lg-4">
+                                    <figure class="" align="center"><video width="88%"  controls>
+                                        <source src="video/15_Attiny Neopixel 2 botone.mp4" type="video/mp4">
+                                    </video></p></figure>
+                                    <p class="fs-6 mb-4">15. Attiny Neopixel 2 botones</p>
+                                </div>
+                                <div class="col-lg-4">
+                                    <figure class="" align="center"><video width="88%"  controls>
+                                        <source src="video/16_Attiny Neopixel Tira x5.mp4" type="video/mp4">
+                                    </video></p></figure>
+                                    <p class="fs-6 mb-4">16. Attiny Neopixel Tira x5</p>
+                                </div>
+                                <div class="col-lg-4">
+                                    <figure class="" align="center"><video width="88%"  controls>
+                                        <source src="video/17_Attiny Neopixel Tira x5 2 botones.mp4" type="video/mp4">
+                                    </video></p></figure>
+                                    <p class="fs-6 mb-4">17. Attiny Neopixel Tira x5 2 botones</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p id="conclusiones">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
+                        <p class="fs-6 mb-4">
+
+                        </p>
+                        <p class="fs-6 mb-4">
+
+                        </p>
+
+                        <p id="referencias">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Referencias -</h2>
+                        <p class="fs-6 mb-4">Isaac. (2021, 4 agosto). ATtiny85: Un microcontrolador que da mucho juego. . . Hardware libre. https://www.hwlibre.com/attiny85/</p>
+                        <p class="fs-6 mb-4">Cómo usar un arduino UNO como programador ISP | Programador ISP Arduino | BricoGeek Lab. (2022, 31 enero). Tutorial donde te enseño cómo convertir un Arduino UNO en un programador ISP barato y casero. https://lab.bricogeek.com/tutorial/como-usar-un-arduino-uno-como-programador-isp/programador-isp-arduino</p>
+                        <p class="fs-6 mb-4">Alpizar, A. R., & Alpizar, A. R. (2020). Como usar un arduino UNO/MEGA como programador ISP | Sysadmins de Cuba. Sysadmins de Cuba. https://www.sysadminsdecuba.com/2020/08/como-usar-un-arduino-uno-mega-como-programador-isp/</p>
+                        <p class="fs-6 mb-4">ATTINY85 20PU DIP8 Microcontrolador - UNIT Electronics. (2023, September 18). Retrieved September 21, 2023, from UNIT Electronics website: https://uelectronics.com/producto/attiny85-20pu-dip8-microcontrolador/</p>
+
+                        <p id="descargables">
+                            <h2 class="fw-bolder mb-4 mt-5 fs-5">- Descargables -</h2>
+                            <p class="fs-6 mb-4">Link a tinkercad: https://www.tinkercad.com/classrooms/kKxYmpPDJXs/activities/4kQsn4JC4gt </p>
+                            <p class="fs-6 mb-4">Descargar código Arduino: <a href="files/1_attiny_led_2_botones1/1_attiny_led_2_botones1.ino">Código 1</a></p>
+                            <p class="fs-6 mb-4">Descargar código Arduino: <a href="files/2_attiny_led_blink_2_botones1/2_attiny_led_blink_2_botones1.ino">Código 2</a></p>
+                            <p class="fs-6 mb-4">Descargar código Arduino: <a href="files/3_attiny_buzzer_2_botones1/3_attiny_buzzer_2_botones1.ino">Código 3</a></p>
+                            <p class="fs-6 mb-4">Descargar código Arduino: <a href="files/4_attiny_led_rgb_2_botones1/4_attiny_led_rgb_2_botones1.ino">Código 4 </a></p>
+                            <p class="fs-6 mb-4">Descargar código Arduino: <a href="files/5_attiny_led_rgb_contador_2_botones1/5_attiny_led_rgb_contador_2_botones1.ino">Código 5</a></p>
+                            <p class="fs-6 mb-4">Descargar código Arduino: <a href="files/6_attiny_motor_dc_2_botones1/6_attiny_motor_dc_2_botones1.ino">Código 6</a></p>
+                            <p class="fs-6 mb-4">Descargar código Arduino: <a href="files/7_attiny_led_pwm1/7_attiny_led_pwm1.ino">Código 7 </a></p>
+                            <p class="fs-6 mb-4">Descargar código Arduino: <a href="files/8_attiny_led_pwm_2_botones1/8_attiny_led_pwm_2_botones1.ino">Código 8</a></p>
+                            <p class="fs-6 mb-4">Descargar código Arduino: <a href="files/9_attiny_buzzer_pwm1/9_attiny_buzzer_pwm1.ino">Código 9</a></p>
+                            <p class="fs-6 mb-4">Descargar código Arduino: <a href="files/10_attiny_buzzer_pwm_2_botones1/10_attiny_buzzer_pwm_2_botones1.ino">Código 10</a></p>
+                            <p class="fs-6 mb-4">Descargar código Arduino: <a href="files/11_attiny_motor_dc_pwm_2_botones1/11_attiny_motor_dc_pwm_2_botones1.ino">Código 11</a></p>
+                            <p class="fs-6 mb-4">Descargar código Arduino: <a href="files/12_attiny_servomotor1/12_attiny_servomotor1.ino">Código 12</a></p>
+                            <p class="fs-6 mb-4">Descargar código Arduino: <a href="files/13_attiny_servomotor_2_botones1/13_attiny_servomotor_2_botones1.ino">Código 13 </a></p>
+                            <p class="fs-6 mb-4">Descargar código Arduino: <a href="files/14_attiny_neopixel_1/14_attiny_neopixel_1.ino">Código 14</a></p>
+                            <p class="fs-6 mb-4">Descargar código Arduino: <a href="files/15_attiny_neopixel_2_botones1/15_attiny_neopixel_2_botones1.ino">Código 15 </a></p>
+                            <p class="fs-6 mb-4">Descargar código Arduino: <a href="files/16_attiny_neopixel_tira_x_5/16_attiny_neopixel_tira_x_5_2_botones1.ino">Código 16 </a></p>
+                            <p class="fs-6 mb-4">Descargar código Arduino: <a href="files/17_attiny_neopixel_tira_x_5_2_botones1/17_attiny_neopixel_tira_x_5_2_botones1.ino">Código 17 </a></p>
+                </div>
+            </section>
+
+            
+        </main>
+
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Ingenierias-iberopuebla.mx 2023</div></div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="#!">Privacy</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Terms</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

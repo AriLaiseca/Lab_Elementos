@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Práctica 5 | Ibero Puebla</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container px-5">
+                    <a class="navbar-brand">Menu</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="../">Home</a></li>                    
+                            <li class="nav-item"><a class="nav-link" href="../index.html#resumen">Acerca de mi</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#practicas">Prácticas</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Seccion TITULO de Portafolio-->
+            <header class="bg-primary py-2 mt-6">
+                <div class="container px-5">
+                    <div class="row gx-5 align-items-center justify-content-center">
+                        <div class="col-lg-8 col-xl-7 col-xxl-6">
+                            <div class="my-5 text-center text-xl-start">
+                                <h1 class="display-6 fw-bolder text-white mb-2">Portafolio de Actividades</h1>
+                                <h1 class="display-8 fw-bolder text-white mb-2">Laboratorio de Elementos Programables I</h1>
+                                <p id="resumen" class="display-8 fw-normal text-white-50 mb-4">Departamento de Ciencias e Ingenierías | Universidad Iberoamericana Puebla, México.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Seccion TITULO de la Práctica-->
+            <section class="py-3" id="scroll-target">
+                <div class="container px-5 my-2">
+                    <!-- Post header-->
+                    <header class="mb-4">
+                        <!-- Post title-->
+                        <h1 class="fw-bolder mb-1">Práctica 5: Pantalla OLED</h1>
+
+                        <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
+                            <img class="img-fluid rounded-circle" width="50px" src="assets/fotoari.jpeg" alt="..." />
+                            <div class="ms-2">
+                                <div class="fw-bold">Nombre: Ariatna Laiseca De la Cruz</div>
+                                <div class="text-muted">Carrera: Ingeniería Biomédica</div>
+                            </div>
+                        <!--Aqui termina etiqueta de alumno-->
+
+                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: Septiembre 28, 2023</div>
+                        <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
+                        <a class="badge bg-primary text-decoration-none link-light" >Arduino</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Electrónica</a>
+
+                    </header>
+                </div>
+            </section>
+
+            <!-- Seccion de CONTENIDO de la Práctica-->
+            <section>
+                <div class="container px-5">
+
+                    <figure class="mb-4"><img class="img-fluid rounded" width="800px" src="img/Pantalla.jpg" alt="..." /></figure>
+                                
+                    <p id="resumen">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
+                        <p class="fs-6 mb-4">
+                            En este reporte de práctica, construimos un circuito en el cual al presionar un botón, se logra la visualización en la pantalla OLED del mensaje "ON", y al soltar el botón, la pantalla muestra "OFF". 
+                            Es relevante destacar que continuamos empleando el Attiny85 y Arduino para la programación, con la distinción de que esta vez fuimos responsables de redactar el código necesario para que la pantalla OLED funcionara de la manera deseada.
+                        </p>
+                                                
+                        <p id="intro">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
+                        <p class="fs-6 mb-4">
+                            El Microcontrolador ATTINY85 se emplea en proyectos de vestimenta electrónica y, por supuesto, en proyectos portátiles en los que puedes aplicar los protocolos de comunicación más comunes, como SPI o I2C, e incluso programarlos para llevar a cabo PWM. Es conveniente para ensamblajes de pequeña escala en los que un Arduino resultaría excesivo en términos de tamaño y memoria.
+                        </p> 
+                        <p class="fs-6 mb-4">
+                            Las pantallas OLED (Organic Light-Emitting Diode, por sus siglas en inglés) son un tipo de tecnología de visualización utilizada en dispositivos electrónicos, como teléfonos inteligentes, televisores, relojes inteligentes y otros dispositivos portátiles. A diferencia de las pantallas LCD (Liquid Crystal Display), que requieren una fuente de luz de fondo para iluminar los píxeles, las pantallas OLED son autoemisivas, lo que significa que cada píxel emite su propia luz.
+                            Además de sus ventajas en calidad de imagen, las pantallas OLED son flexibles y delgadas, lo que permite diseños más delgados y dispositivos plegables. También pueden consumir menos energía en comparación con las pantallas LCD en situaciones en las que se muestra contenido con mucho negro, ya que los píxeles negros en una pantalla OLED están apagados y no consumen energía.
+                            Sin embargo, las pantallas OLED también tienen algunas desventajas, como la posibilidad de sufrir quemado de pantalla (burn-in) si se muestra una imagen estática durante mucho tiempo y una vida útil limitada en comparación con algunas otras tecnologías de visualización.
+                        </p>
+                                                                          
+                        <p id="materiales">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
+                        <p class="fs-6 mb-4">Arduino UNO, Attiny85, Protoboard,</p>
+                        <p class="fs-6 mb-4">Botón, Leds, pantalla OLED, cables, computadora</p>
+        
+                        <p id="desarrollo">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
+                        <p class="fs-6 mb-4">
+                            Primero se programó el Arduino UNO para ocuparse como programador.
+                            Se configuró el Attiny885 para que se pueda conectar con el Arduino y cargar los programas.
+                        </p>
+                        <p class="fs-6 mb-4">
+                            Las instrucciones sobre la práctica son las siguientes:
+                            1. Al oprimir el botón se mostrará en la pantalla un mensaje de encendido.
+                            2. Al dejar de oprimirlo el mensaje ue se mostrará ne la pantalla será de 
+                        </p>
+                                          
+                    
+                            <p id="construccion">
+                            <h1 class="fw-bolder2 mb-4 mt-5 fs-5">Construcción</h1>
+                            <p class="fs-6 mb-4">
+                                La conexión de la pantalla OLED hacia el Arduino UNO es sencilla. Se alimenta con 5V al módulo de Arduino y también GND, se conecta el Pin SDA y SCL a los pines correspondientes de Arduino.
+                            </p>
+                            <p class="fs-6 mb-4"></p>
+                            <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/conexion pantalla.jpg" alt="..." /></figure>
+                           
+                            <p class="fs-6 mb-4">Se realizó la construcción del circuito  con el Arduino, Attiny85 y el protoboard.
+                                Conectando el boton y la pantalla OLED.
+                            </p>
+                            <figure class="mb-4" align="left"><img class="img-fluid rounded"  width="350px" src="img/PantallaOLED.jpeg" alt="..." /></figure>
+                            <p class="fs-6 mb-4"> </p>
+
+                        <p id="resultados">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultados -</h2>
+                        <p class="fs-6 mb-4">
+                            Se realizó un nuevo código basándonos en un código ya establecido y se modificaron algunas variables.
+                        </p>
+                        <figure class="mb-4" align="left"><img class="img-fluid rounded"  width="350px" src="img/Codigo pantalla.png" alt="..." /></figure>
+                            <p class="fs-6 mb-4"> </p>
+                        <p class="fs-6 mb-4">Simulación de la Pantalla OLED</p>
+                        <div class="col-lg-4 mb-4">
+                            <figure class="mb-4" align="center"><video width="100%"  controls>
+                                <source src="video/Pantalla OLED.mp4" type="video/mp4">
+                            </video></p></figure>
+                        </div>
+
+
+                        <p id="conclusiones">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Conclusiones -</h2>
+                        <p class="fs-6 mb-4">
+                            Se puede concluir que esta actividad resultó muy beneficiosa para comprender a fondo el funcionamiento del Attiny85. Sin embargo, va más allá de eso, ya que permitió adquirir un conocimiento detallado sobre el funcionamiento de la pantalla OLED y cómo configurarla mediante el uso del botón.
+                            Además, repasar estos conceptos ayuda a recordar cómo un botón envía una instrucción a la pantalla OLED a través de la programación.
+                        </p>
+                        <p class="fs-6 mb-4"></p>
+
+                        <p id="referencias">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Referencias -</h2>
+                        <p class="fs-6 mb-4">Isaac. (2021, 4 agosto). ATtiny85: Un microcontrolador que da mucho juego. . . Hardware libre. https://www.hwlibre.com/attiny85/</p>
+                        <p class="fs-6 mb-4">Cómo usar un arduino UNO como programador ISP | Programador ISP Arduino | BricoGeek Lab. (2022, 31 enero). Tutorial donde te enseño cómo convertir un Arduino UNO en un programador ISP barato y casero. https://lab.bricogeek.com/tutorial/como-usar-un-arduino-uno-como-programador-isp/programador-isp-arduino</p>
+                        <p class="fs-6 mb-4">Alpizar, A. R., & Alpizar, A. R. (2020). Como usar un arduino UNO/MEGA como programador ISP | Sysadmins de Cuba. Sysadmins de Cuba. https://www.sysadminsdecuba.com/2020/08/como-usar-un-arduino-uno-mega-como-programador-isp/</p>
+                        <p class="fs-6 mb-4"></p>
+
+                        <p id="descargables">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Descargables -</h2>
+                        <p class="fs-6 mb-4">Descargar codigo Arduino: <a href="files/PantallaOLED/PantallaOLED.ino">codigo pantalla</a> </p>
+                        
+
+                </div>
+            </section>
+
+            
+        </main>
+
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Ingenierias-iberopuebla.mx 2023</div></div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="#!">Privacy</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Terms</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
