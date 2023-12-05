@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Proyecto Final | Ibero Puebla</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container px-5">
+                    <a class="navbar-brand">Menu</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="../">Home</a></li>                    
+                            <li class="nav-item"><a class="nav-link" href="../index.html#resumen">Acerca de mi</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../index.html#practicas">Prácticas</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Seccion TITULO de Portafolio-->
+            <header class="bg-primary py-2 mt-6">
+                <div class="container px-5">
+                    <div class="row gx-5 align-items-center justify-content-center">
+                        <div class="col-lg-8 col-xl-7 col-xxl-6">
+                            <div class="my-5 text-center text-xl-start">
+                                <h1 class="display-6 fw-bolder text-white mb-2">Portafolio de Proyecto</h1>
+                                <h1 class="display-8 fw-bolder text-white mb-2">Laboratorio de Elementos Programables I</h1>
+                                <p id="resumen" class="display-8 fw-normal text-white-50 mb-4">Departamento de Ciencias e Ingenierías | Universidad Iberoamericana Puebla, México.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Seccion TITULO de la Práctica-->
+            <section class="py-3" id="scroll-target">
+                <div class="container px-5 my-2">
+                    <!-- Post header-->
+                    <header class="mb-4">
+                        <!-- Post title-->
+                        <h1 class="fw-bolder mb-1">Proyecto Final: Wearable</h1>
+
+                        <!-- ETIQUETA DE ALUMNO (Hacer una por cada alumno)-->
+                            <img class="img-fluid rounded-circle" width="50px" src="assets/fotoari.jpeg" alt="..." />
+                            <div class="ms-2">
+                                <div class="fw-bold">Nombre: Ariatna Laiseca De la Cruz</div>
+                                <div class="text-muted">Carrera: Ingeniería Biomédica</div>
+                            </div>
+                        <!--Aqui termina etiqueta de alumno-->
+
+                        <div class="text-muted fst-italic mt-2 mb-2">Fecha: Diciembre 1, 2023</div>
+                        <!-- ETIQUETAS O TOPICOS IMPORTANTES DE LA PRACTICA-->
+                        <a class="badge bg-primary text-decoration-none link-light" >Arduino</a>
+                        <a class="badge bg-primary text-decoration-none link-light" >Electrónica</a>
+
+                    </header>
+                </div>
+            </section>
+
+            <!-- Seccion de CONTENIDO de la Práctica-->
+            <section>
+                <div class="container px-5">
+
+                    <figure class="mb-4"><img class="img-fluid rounded" width="800px" src="img/Portada_PF.png" alt="..." /></figure>
+                                
+                    <p id="resumen">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Resumen -</h2>
+                        <p class="fs-6 mb-4"> En este reporte se encuentra el desarrollo del proyecto final de la materia que consistió en la elaboración de un dispositivo wearable utilizando el microcontrolador Attiny85.
+                            Con el objetivo de recopilar todo lo aprendido en las prácticas y programar sensores para mostrarlos en una pantalla.
+                        </p>
+                        
+                        <p id="intro">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Introducción -</h2>
+                        <p class="fs-6 mb-4">Un wearable es un dispositivo conectado que se puede llevar puesto, ya que a cualquier objeto se le puede añadir un componente que lo hará inteligente. 
+                            Los más habituales registran aquello que no podemos ver a simple vista, como la frecuencia cardíaca, nuestra frecuencia respiratoria, las horas de sueño, el bienestar o el estrés. Algunos ejemplos de wearables son objetos como gafas, auriculares, pulseras, camisetas, cinturones, relojes, calcetines o zapatos. Muchos suelen confundirlos con los teléfonos inteligentes, pero la diferencia es que estos están integrados en nuestro cuerpo, liberando de alguna manera las manos del usuario (Kinza Yasar & Wigmore, 2022).
+                        </p>
+                        <p class="fs-6 mb-4">
+                            El Attiny85, un pequeño microcontrolador, con el que podremos realizar pequeños proyectos, en los que no necesitamos gran cantidad de memoria ni de entradas ni de salidas. 
+                            Este micro lo podremos programar con nuestro entorno de escritorio Arduino. Existe un proceso completo en el que puedes programar tu Arduino para programar tu Attiny85 (“Electromaker”, 2017).
+                        </p>
+                        <p class="fs-6 mb-4">
+                            Hoy en día, las personas usan dispositivos portátiles para monitorear la salud, de modo que pueden rastrear y recibir múltiples notificaciones de cómo está su frecuencia cardíaca, o incluso su presión arterial, en ese momento exacto.
+                            Los sensores que íbamos a utilizar para este proyecto son el MAX30102, y un Sensor Mlx90614 M011, por eso pensé que sería bueno dar una breve explicación de cada sensor.
+                        </p>
+                        <p class="fs-6 mb-4">
+                            El MAX30102 es un módulo biosensor de monitorización de frecuencia cardíaca y oximetría de pulso integrado. Incluye LED internos, fotodetectores, elementos ópticos y electrónica de bajo ruido con rechazo de luz ambiental. 
+                            El MAX30102 proporciona una solución de sistema completa para facilitar el proceso de diseño de dispositivos móviles y portátiles (“MAX30102 Datasheet and Product Info | Analog Devices”, 2015).
+
+                            El sensor GY-906 MLX90614 puede medir la temperatura ambiente en función de la resistencia del termistor en la placa. Conecte la línea de alimentación del módulo (centro) y tierra (-) a 5V y GND en el Arduino respectivamente. Conecte el pin de señal del módulo (S) al pin A0 del Arduino.
+                        </p>
+                           
+                        <p id="materiales">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5" >- Materiales -</h2>
+                        <p class="fs-6 mb-4">Arduino UNO, Attiny85, Placa PCB,</p>
+                        <p class="fs-6 mb-4">Boton, Sensor MAX30102, Resistencia 1kohm, Sensor MLX90614, pantallas OLED</p>
+
+                        
+                        <p id="desarrollo">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Desarrollo -</h2>
+                        <p class="fs-6 mb-4">Paso 1: Lluvia de ideas</p>
+                        <p class="fs-6 mb-4">
+                        Para este proyecto, como se pensó en ser un dispositivo que pudieran utilizar animales y personas, simplemente cambiando su diseño y las medidas correspondientes dependiendo de su sistema, lo que se hizo fue utilizar tres sensores que pudieran utilizar ambas poblaciones; por lo que es importante mencionar que los tres sensores que se utilizaron miden signos vitales importantes para cuidar su salud y bienestar.
+                        </p>
+
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/img1.png" alt="..." /></figure>
+                        <p class="fs-6 mb-4">Paso 2: Investigar la hoja de datos de cada sensor</p>
+                        <p class="fs-6 mb-4">
+                        Aquí colocamos la hoja de datos de cada sensor para que comprenda la distribución de pines y algunas especificaciones importantes que debe considerar.
+                        </p>
+                        <p class="fs-6 mb-4"></p>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/img2.png" alt="..." /></figure>
+                        <p class="fs-6 mb-4">Paso 3: Colóquelos en un Protoboard </p>
+                        <p class="fs-6 mb-4">Aquí está la imagen de cómo conectarlos.</p>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/img3.jpg" alt="..." /></figure>
+                        <p class="fs-6 mb-4">Paso 4: Programación </p>
+                        <p class="fs-6 mb-4">Se utilizaron tres sensores, pero el MAX3102 tiene dos, por eso solo hay dos programas.
+                            Attiny Core es importante para programar ambos códigos.
+                        </p>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/img4.png" alt="..." /></figure>
+                        <p class="fs-6 mb-4">Paso 5: Comprobar que todo funciona correctamente </p>
+                        <p class="fs-6 mb-4">Pudimos comprobar que todo funcionaba correctamente, porque uno mostraba la temperatura y el otro la presión arterial y los latidos del corazón por minuto.
+                        </p>
+                        <figure class="mb-4" align="center"><video width="30%"  controls>
+                            <source src="video/VideoSensor (1).mp4" type="video/mp4">
+                        </video></p></figure>
+                        <p class="fs-6 mb-4">Paso 6: Diseño de PCB </p>
+                        <p class="fs-6 mb-4">
+                            El circuito se realizó en un esquema para posteriormente actualizarlo en forma de PCB. También realizamos el PCB mediante el método "Planchado", en el cual te sugerimos seguir el siguiente video.
+                        </p>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="500px" src="img/FGFL6ZQLPL7HNR7.jpg" alt="..." /></figure>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="500px" src="img/FLGRZUPLPL7HNZI.png" alt="..." /></figure>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="500px" src="img/FR10NL6LPL7HNSO.png" alt="..." /></figure>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="500px" src="img/FZXE9Y8LPL7HNZJ.png" alt="..." /></figure>
+                        <p class="fs-6 mb-4">Paso 7: Impresión de carcasa en 3D </p>
+                        <p class="fs-6 mb-4">
+                            A lo largo de este proyecto, también asumimos el diseño de un recinto para salvaguardar nuestro circuito. Dentro de él, incorporamos un área dedicada para mostrar la pantalla, facilitar el uso de los botones y permitir una salida audible del timbre. En el lado opuesto del recinto, se previó el contacto directo del sensor (ya sea de frecuencia cardíaca, oxigenación o temperatura) con la piel para presentar con precisión los resultados correspondientes.
+                        </p>
+                        <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="600px" src="img/FDZE0QMLPL7MOK5.png" alt="..." /></figure>
+
+
+                        <p id="resultados">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Resultado final -</h2>
+                                <p class="fs-6 mb-4">Después de colocar el diseño adecuado, asegúrese de que la PCB y la estructura 3D encajen y funcionen correctamente. Eso es todo, creemos que con esto podrás pasear por la calle con tu mascota, sin que se queme con el sol y al mismo tiempo cuidas de su salud.</p>
+                                <figure class="mb-4" align="center"><img class="img-fluid rounded"  width="500px" src="img/final.jpeg" alt="..." /></figure>
+                                
+                                <figure class="mb-4" align="center"><video width="30%"  controls>
+                                    <source src="video/sensorPERR.mp4" type="video/mp4">
+                                </video></p></figure>
+                                <figure class="mb-4" align="center"><video width="30%"  controls>
+                                    <source src="video/sensorHUM.mp4" type="video/mp4">
+                        
+                        <p id="referencias">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Referencias -</h2>
+                        <p class="fs-6 mb-4">Aguayo, P. (2023). ¿Qué es Arduino? | Arduino.cl - Compra tu arduino en línea. Arduino.cl - Compra tu Arduino en Línea. https://arduino.cl/que-es-arduino/</p>
+                        <p class="fs-6 mb-4">Admin, C. (2020b, febrero 12). Funcionamiento de todos los pines del microcontrolador ATMEGA328P. https://www.electroallweb.com/index.php/2020/02/12/funcionamiento-de-todos-los-pines-del-microcontrolador-atmega328p/</p>
+                        <p class="fs-6 mb-4">* ATTINY85 20PU DIP8 Microcontrolador - UNIT Electronics. (2023, September 18). Retrieved September 21, 2023, from UNIT Electronics website: https://uelectronics.com/producto/attiny85-20pu-dip8-microcontrolador/</p>
+                
+                        <p id="descargables">
+                        <h2 class="fw-bolder mb-4 mt-5 fs-5">- Descargables -</h2>
+                            <p class="fs-6 mb-4">Descargar código Arduino: <a href="files/2_attiny_led_blink_2_botones1/2_attiny_led_blink_2_botones1.ino">Código 1</a></p>
+                            <p class="fs-6 mb-4">Descargar código Arduino: <a href="files/3_attiny_buzzer_2_botones1/3_attiny_buzzer_2_botones1.ino">Código 2</a></p>
+                            <p class="fs-6 mb-4">Descargar código Arduino: <a href="files/4_attiny_led_rgb_2_botones1/4_attiny_led_rgb_2_botones1.ino">Código 3</a></p>
+                            <p class="fs-6 mb-4">Descargar código Arduino: <a href="files/5_attiny_led_rgb_contador_2_botones1/5_attiny_led_rgb_contador_2_botones1.ino">Código 4</a></p>
+                            <p class="fs-6 mb-4">Descargar código Arduino: <a href="files/6_attiny_motor_dc_2_botones1/6_attiny_motor_dc_2_botones1.ino">Código 5</a></p>
+                            <p class="fs-6 mb-4">Descargar código Arduino: <a href="files/6_attiny_motor_dc_2_botones1/6_attiny_motor_dc_2_botones1.ino">Código 6</a></p>
+                </div>
+            </section>
+                            
+        </main>
+
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Ingenierias-iberopuebla.mx 2023</div></div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="#!">Privacy</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Terms</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
